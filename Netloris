@@ -9,17 +9,20 @@ from impacket import ImpactDecoder, ImpactPacket
 from six.moves import range
 
 
-print('''
-         _   _      _   _                _     
+print('''         _   _      _   _                _     
 | \ | |    | | | |              (_)    
 |  \| | ___| |_| |     ___  _ __ _ ___ 
 | . ` |/ _ \ __| |    / _ \| '__| / __|
 | |\  |  __/ |_| |___| (_) | |  | \__ \
 |_| \_|\___|\__|______\___/|_|  |_|___/    
-MADE BY D1MOD1877
-https://1877.team/
-
 ''')
+print("\n****************************************************************")
+print("\n* MADE BY D1MOD       *")
+print("\n* 1877 TEAM           *")
+print("\n* https://1877.team/  *")
+print("\n****************************************************************")
+
+
 
 if len(sys.argv) == 2 :
         target_ip = sys.argv[1]
@@ -27,7 +30,7 @@ else: #incorrect values, print help
         print("Usage: %s victim_IP target_IP \n   eg: %s 192.168.1.0 192.24.31.1" % (sys.argv[0],sys.argv[0]))
         exit(1)
 
-print("Attempting dos attack on %s(Target IP) " % (target_ip))
+print("-- NetLoris Attack The Server --  %s(Target IP) " % (target_ip))
 
 def flood(src, dst):
 	# create packet
