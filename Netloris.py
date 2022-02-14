@@ -6,15 +6,11 @@ import sys
 
 
 def usage():
-	print '---------------------------------------------------'
-	print '- USAGE: python2 Netloris.py <IP> <PORT> <PACKEt>'
-	print '- EXAMPLE : python2 Netloris.py 95.15973.4 443 1000 '
-        print '- MADE BY D1MOD1877'
-	print '- DISCORD SERVER https://discord.gg/d1mod'
-	print '- 1877 WEBSITE https://1877.team/'
-        print '- 1877 TEAM CHANNEL https://t.me/x1877x'
-	print '---------------------------------------------------'
-
+    print "Command: " + sys.argv[0] + " <ip> <port> <packet>"
+    print '----------------------------------------------#'
+    print 'MADE BY D1MOD 1877                            #'
+    print 'DISCORD SERVER https://discord./d1mod         #'       
+    print '----------------------------------------------#'
 
 
 def flood(victim, vport, duration):
