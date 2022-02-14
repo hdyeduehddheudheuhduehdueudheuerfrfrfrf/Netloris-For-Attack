@@ -7,10 +7,7 @@ import sys
 
 def usage():
     print "Command: " + sys.argv[0] + " <ip> <port> <packet>"
-    print '----------------------------------------------#'
-    print 'MADE BY D1MOD 1877                            #'
-    print 'DISCORD SERVER https://discord./d1mod         #'       
-    print '----------------------------------------------#'
+  
 
 
 def flood(victim, vport, duration):
