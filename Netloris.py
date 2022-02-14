@@ -6,7 +6,12 @@ import sys
 
 
 def usage():
-    print "Command: " + sys.argv[0] + " <ip> <port> <packet>"
+	print '---------------------------------------------------'
+	print 'USAGE: python2 D1MOD.py <url>'
+	print 'EXAMPLE : python2 D1MOD.py https://giv.tr'
+	print '1877 TEAM https://1877.team/'
+	print '---------------------------------------------------'
+
   
 
 
